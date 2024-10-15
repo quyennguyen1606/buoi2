@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x= 4;
+        x+=3
+        console.log("x= "+x)
+        //chỗ này x= x+3--> x=4+3=7
+        let y=x;
+        y++;
+        //y++ là y lên 1 đơn vị
+        console.log("y="+y)
+        // lúc này y=5
+        //tại thời điểm delta t: y=8,x=7
+        const z=x++ +y++
+        console.log("z="+z)
+        // lúc này x=7, y=8 --> z=15 (chỉ khi viết lệnh let, sau đó xuống đặt lệnh thì mới tính, còn viết lệnh chung thì nó vẫn vậy)
+        //ví dụ nè:
+        let h=8;
+        h++;
+        console.log("h="+(h))
+        //lúc này có let nè nên h=9
+
+    </script>
+    
+</body>
+</html>
